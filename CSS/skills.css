@@ -1,0 +1,24 @@
+.skills {
+    background-color: white;
+}
+.skills h1{
+    font-size: 32px;
+}
+
+.skills td{
+    background-color: white;
+}
+.skills img{
+    
+    align-items: center;
+    height: 60%;
+    width: 60%;
+    
+}
+/* .skills img{
+    align-items: center;
+    height: 60%;
+    width: 60%;
+    background-color: white;
+
+} */

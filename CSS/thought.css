@@ -1,0 +1,17 @@
+.thought {
+    background-color: white;
+    text-align: center;
+    color: black;
+    padding:15px
+  }
+.thought .invertedQuote{
+  font-size: 60px;
+  font-family: 'Coustard', serif;
+}
+.thought span.quote{
+    font-size: 36px;
+}
+.author{
+  font-size: 25px;
+  text-align:right;
+}

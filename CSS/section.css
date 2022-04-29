@@ -1,0 +1,30 @@
+
+ /* Clear floats after the columns */
+ section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* section td{
+    align-items:"Center";
+} */
+section table{
+    border-color:#000000;
+    border: 10px;
+    align-items: center;
+}
+
+section td{
+    align-items: center;
+    background-color :#fff2d8; 
+    padding: 15px;
+}
+section span{
+    font-size: 40px;
+}
+section img{
+    height: 50%;
+    width: 100%;
+    align-items: center;
+}
