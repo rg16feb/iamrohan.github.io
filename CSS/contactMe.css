@@ -6,7 +6,9 @@
 }
 
 .contactMe td{
-    background-color: white;
+    background-color: antiquewhite;
+    padding-left: 40px; 
+    padding-right: 40px;
 }
 .contactMe img{
     
