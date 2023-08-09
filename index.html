@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="./CSS/section.css"/>
     <link rel="stylesheet" href="./CSS/thought.css"/>
     <link rel="stylesheet" href="./CSS/skills.css"/>
+    <link rel="stylesheet" href="./CSS/project.css"/>
+    <link rel="stylesheet" href="./CSS/education.css"/>
+    <link rel="stylesheet" href="./CSS/experience.css"/>
+    <link rel="stylesheet" href="./CSS/gap.css"/>
     <link rel="stylesheet" href="./CSS/certs.css"/>
     <link rel="stylesheet" href="./CSS/Effects/opacity.css"/>
     <link rel="stylesheet" href="./CSS/Effects/zoomOut.css"/>
@@ -26,69 +30,174 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        /* .sticky + .content {
+            padding-top: 102px;
+        } */
+    </style>
 </head>
 <body Bgcolor="black">
 
-<header>
-    <table class=".menu">
-        <tr>
-            <td><img src="./Images/Logo.png" height="20%" width = 20%><br><p style="font-size: 20px;"></td>
-        </tr>
-        <tr class="MenuContents">
-            <td style="font-size: 30px;">Rohan's Portfolio</td>
-            <td style="padding: 15px;" class="zoom">Home</td>
-            <td>|</td>
-            <td style="padding: 15px;" class="zoom">About</td>
-            <td>|</td>
-            <td style="padding: 15px;" class="zoom">Academics</td>
-            <td>|</td>
-            <td style="padding: 15px;" class="zoom">Experience</td>
-            <td>|</td>
-            <td style="padding: 15px;" class="zoom" onClick="document.location.href='#projects';">Projects</td>
-            <td>|</td>
-            <td style="padding: 15px;" class="zoom" onClick="document.location.href='#skills';">Skills</td>
-            <td>|</td>
-            <td style="padding: 15px;" class="zoom" onClick="document.location.href='#contactMe';">Contact Me</td>
-        </tr>
-        
-    </table>
+<header >
+    <div class="navbar" id="myHeader">
+        <table class=".MenuContents" Bgcolor="black">
+            <tr>
+                <td Align="left" style="padding-left: 10px;"><img src="./Images/Logo.png" height="15%" width = 15%>
+                    <!-- <p style="font-size: 18px;"> -->
+                </td>
+            </tr>
+            <tr class="MenuContents">
+                <td Align="left" style="padding-left:10px;font-size: 25px;">Rohan's Portfolio</td>
+                <td style="padding: 18px;" class="zoom" onClick="document.location.href='#home';">Home</td>
+                <td>|</td>
+                <td style="padding: 18px;" class="zoom" onclick="document.location.href='#home'">About</td>
+                <td>|</td>
+                <td style="padding: 18px;" class="zoom" onclick="document.location.href='#education'">Academics</td>
+                <td>|</td>
+                <td style="padding: 18px;" class="zoom" onClick="document.location.href='#experience';">Experience</td>
+                <td>|</td>
+                <td style="padding: 18px;" class="zoom" onClick="document.location.href='#projects';">Projects</td>
+                <td>|</td>
+                <td style="padding: 18px;" class="zoom" onClick="document.location.href='#skills';">Skills</td>
+                <td>|</td>
+                <td style="padding: 18px;" class="zoom" onClick="document.location.href='#contactMe';">Contact Me</td>
+            </tr>
+        </table>
+    </div>
 </header>
-<section>
-    <table>
-        <tr>
-            <td class="opacity">
-                <SPAN>ACADEMICS & EDUCATION</SPAN>
-            </td>
-            <td rowspan="3" style="background-color: black;" width="24%"
-                ><img src="./Images/Rohan-White-Formal.png">
-            </td>
-            <td class="opacity" onClick="document.location.href='#skills';">
-                <SPAN>SKILLS & EXPERTISE</SPAN>
-            </td>
-            
-        </tr>
-        <tr>
-            <td class="opacity" onClick="document.location.href='#achievements';">
-            
-                <SPAN>ACHIEVEMENTS</SPAN>
-            </td>
+
+<a name="home">    
+    <section>
+        <table>
+            <tr>
+                <td class="opacity" onclick="document.location.href='#education'">
+                    <!-- <SPAN>ACADEMICS & EDUCATION</SPAN> -->
+                    <span>ACADEMICS & EDUCATION</span>
+                </td>
+                <td rowspan="3" style="background-color: black;" width="15%"
+                    ><img src="./Images/Rohan-White-Formal.png">
+                </td>
+               
+                <td class="opacity" onClick="document.location.href='#skills';">
+                    <SPAN>SKILLS & EXPERTISE</SPAN>
+                </td>
+                <td rowspan="3" Align="top">
+                    <div>
+                        
+                    <h1 style="font-size: 32px;" onclick="document.location.href='#home'">About Myself</h1>
+                    
+
+                    <span style="font-size: 20px;text-align: justify;">
+                        I am a versatile and skilled Software Developer with expertise in Java, Golang, and Python programming languages. I bring a wealth of technical knowledge in microservices architecture, utilizing tools such as Maven and Docker to streamline development processes. My proficiency extends to database management systems, including MySQL and SQL Plus, allowing me to efficiently manage data and design robust solutions. With a creative edge, I am well-versed in web development technologies like HTML, CSS, and Bootstrap, coupled with design capabilities using Adobe Photoshop and Illustrator. I thrive on crafting innovative and efficient solutions, evident in my work on various projects, including Android app development using Android Studio. With a strong foundation in both programming and design, I am poised to contribute effectively to dynamic and impactful endeavors.
+                    </span>
+                    
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="opacity" onClick="document.location.href='#achievements';">
                 
-            <td class="opacity">
-                <SPAN>EXPERIENCE</SPAN>
-            </td>
-        </tr>
-        <tr>
-            <td class="opacity" onClick="document.location.href='#projects';">
-                <SPAN>PROJECTS</SPAN>
-            </td>
-                
-            <td class="opacity">
-                <SPAN>HOBBIES</SPAN>
-            </td>
-        </tr>
-    </table>
-</section>  
-<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+                    <SPAN>ACHIEVEMENTS</SPAN>
+                </td>
+                    
+                <td class="opacity" onClick="document.location.href='#experience';">
+                    <SPAN>EXPERIENCE</SPAN>
+                </td>
+            </tr>
+            <tr>
+                <td class="opacity" onClick="document.location.href='#projects';">
+                    <SPAN>PROJECTS</SPAN>
+                </td>
+                    
+                <td class="opacity">
+                    <SPAN>HOBBIES</SPAN>
+                </td>
+            </tr>
+        </table>
+    </section>  
+</a>
+
+<!-- <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR> -->
+    <div class="gap"></div>
+<a name="education">
+    <div class="thought">
+        <h1 Align="Left">Academics & Education</h1>
+        <span class="invertedQuote">“</span>
+        <span class="quote">The more that you read, the more things you will know, the more that you learn, the more places you'll go.</span>
+        <span class="invertedQuote">"</span>
+        <p class="author">– Dr. Seuss</p>
+        <br>
+        <HR>
+        <table class="education">
+            <tr>
+                <th>
+                    Year
+                </th>
+                <th>
+                    Degree
+                </th>
+                <th>
+                    Institute
+                </th>
+                <th>
+                    Score (CGPA/Percentage)
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    2016-2020
+                </td>
+                <td>
+                    B. Tech - Computer Science Engineering
+                </td>
+                <td>
+                    Vellore Institute of Technology, Vellore
+                </td>
+                <td>
+                    8.29 CGPA
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2014-2016
+                </td>
+                <td>
+                    High School (Non-Medical + Informatics Practices)
+                </td>
+                <td>
+                    Delhi Public School, Nerul
+                </td>
+                <td>
+                    82.33%
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2013-2014
+                </td>
+                <td>
+                    Secondary School
+                </td>
+                <td>
+                    Delhi Public School, Bareilly
+                </td>
+                <td>
+                    9.8 CGPA
+                </td>
+            </tr>                
+        </table>
+</div> 
+</a>
+<!-- <br>
+<br>
+<br> -->
+<div class="gap"></div></span>
 <!-- SKILLS -->
 <a name="skills">
     <div>
@@ -164,8 +273,128 @@
         </div>
     </div> 
 </a>
-<BR><BR><BR>
-
+<!-- <BR><BR><BR> -->
+<div class="gap"></div></span>
+    <!-- Experience -->
+    <a name="experience">
+        <div class="thought">
+            <h1 Align="Left">Experience</h1>
+                <span class="invertedQuote">“</span>
+                <span class="quote">The only source of knowledge is experience.
+                    </span>
+                <span class="invertedQuote">"</span>
+                <p class="author">– Albert Einstein</p>
+                <br>
+                <HR>
+                <!-- <h1>CERTIFICATES<h1> -->
+                
+                <table>
+                    <tr >
+                        <td rowspan="2">
+                            <div>
+                                <img src="./Images/Experience/wipro.png" height="100%" width="100%" Align="top">
+                            </div>
+                        </td>
+                        <td Align="left">
+                            <h1>1. Wipro Limited - Software Developer Engineer</h1>
+                        </td>
+                        <td nowrap>
+                            <h2>September 2020 - Present</h2>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td Align="justify">
+                            <ul>
+                                <li>Apple Inc. – Client of Wipro Limited.
+                                    <ol>
+                                        <li>River: A load balancing system for real-time monitoring of apps deployed on Kubernetes Pods within a factory environment.
+                                            <ul>
+                                                <li>Developed microservices for server to perform operations on test plans such as upload, transfer, execute, stop and delete. Implemented a functionality for the server to get/set (un)blocked status of clients and duly handle the requests.</li>
+                                                <li>Developed a multi-level access system for employees, allowing monitoring, test execution and access level management.</li>
+                                                <li>Built the REST APIs in Java, Maven, which Define, Query and Manipulate data (using DDL, DQL, DML) in the MySQL DB.</li>
+                                                <li>Performed local testing, deployment to production using Spinnaker and User Acceptance Testing (UAT).</li>
+                                            </ul>
+                                        </li>
+                                        <br>
+                                        <li>Stark: A Golang micro-service application responsible for scheduling and executing Ansible playbooks.
+                                            <ul>
+                                                <li>Laid out a multi-tenant database structure using interconnected SQL tables, accomplishing efficient management of a 4-level hierarchical data system. Implemented micro-services for CRUD operations in SQL Plus on the tree of tables.</li>
+                                                <li>Delivered a new microservice to manage playbooks tags based on host requirements. Performed robust validation checks on lists of existing tags against the new ones, and made the required modifications, ensuring proper execution of the job.</li>
+                                                <li>Transformed log data into Splunk-friendly key-value-pairs format, using the logrus Golang library, achieving efficient search, enhanced usability and improved effectiveness of log analysis within the Splunk.</li>
+                                                <li>Implemented cancellation functionality, updating the status of the requested job, freeing the queue of scheduled jobs.</li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <br>
+                                        <li>JCert: A comprehensive solution for generating Client Authentication Certificates and monitoring alerts near expiry.
+                                            <ul>
+                                                <li>Integrated support for new certificate types using the certificate manager; Developed SQL queries to efficiently retrieve results as per filters set by the user; Introduced tabular formatting to enhance the readability of the returned list.</li>
+                                            </ul>
+                                        </li>
+                                        <br>
+                                        <li>JMET-Ansible:
+                                            <ul>
+                                                <li>Wrote a Python script to validate YAML files and throw apt warnings/errors whenever a Pull-Request-Build is triggered.</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                <div>
+                                    <img src="./Images/Experience/Cleveron.png" height="70%" width="70%" Align="top">
+                                </div>
+                            </td>
+                            <td Align="left">
+                                <hr>
+                            <h1>2. Cleveron Techworks Pvt. Ltd. – Software Engineering Intern</h1>
+                            <td nowrap>
+                                <h2>May 2019 – June 2019</h2>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td Align="justify">
+                                    <ul>
+                                        <li>Worked from scratch on J.A.R.V.I.S., a virtual-assistant Android app that takes voice commands from the user to perform various tasks on their device, such as making calls, sending text messages, browsing the internet, taking notes, navigating through apps.</li>
+                                        <br>
+                                        <li>Used the SpeechRecognizer (speech-to-text) API to process the voice command input. Performed tokenization on the text to identify the type of action (verb) desired by the user and the specific goals of the action. Tech used: Java, XML, Android Studio.</li>
+                                    </ul>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                <div>
+                                    <img src="./Images/Experience/RelianceJio.png" height="70%" width="70%" Align="top">
+                                </div>
+                            </td>
+                            <td Align="left">
+                                <hr>
+                            <h1>3. Reliance Jio Infocomm. Ltd. – Software Engineering Intern</h1>
+                            <td nowrap>
+                                <h2>May 2018 – June 2018</h2>
+                            </td>
+                           
+                        </tr>
+                        <tr>
+                            <td Align="justify">
+                                <ul>
+                                    <li>Learnt about Android App Development and CassandraDB.</li>
+                                </ul>
+                            
+                            </td>
+                        </tr>
+                </table>
+            <br>
+            <HR>
+        </div> 
+    </a>
+    <!-- <br>
+    <br>
+    <br> -->
+    <div class="gap"></div></span>
 
 <!-- ACHIEVEMENTS -->
 <a name="achievements">
@@ -207,104 +436,127 @@
         <HR>
     </div> 
 </a>
-<BR><BR><BR>
+<!-- <BR><BR><BR> -->
+    <div class="gap"></div></span>
 
 
 <!-- <footer>
   <p>Footer</p>
 </footer> -->
-<a name="projects">
-    <div class="thought">
-        <h1 Align="Left">Projects</h1>
-            <span class="invertedQuote">“</span>
-            <span class="quote">Knowledge without application is like a book that is never read.</span>
-            <span class="invertedQuote">"</span>
-            <p class="author">– Christopher Crawford</p>
-            <br>
-            <HR>
-            <!-- <h1>CERTIFICATES<h1> -->
-            
-            <table>
-                <tr class="certs">
-                    
-                    <td rowspan="2">
-                        <div class="certs">
-                            <img src="./Images/Projects/equi_pay_logo.png" height="100%" width="100%">
-                        </div>
-                    </td>
-                    <td colspan="2" Align="left">
-                        <span>1. EquiPay - Split your bills equally</span> 
-                    </td>
-                </tr>
-                <tr class="certs">
-                    <td class = "github" Align="right">
-                        <img src="./Images/ButtonImages/github_logo.png" height="10%" width="10%">: https://github.com/rg16feb/EquiPay.git
-                    </td>
-                    
 
-                </tr>
-                
-            </table>
+<a name="projects">
+<div class="thought">
+    <h1 Align="Left">Projects</h1>
+        <span class="invertedQuote">“</span>
+        <span class="quote">Knowledge without application is like a book that is never read.</span>
+        <span class="invertedQuote">"</span>
+        <p class="author">– Christopher Crawford</p>
         <br>
         <HR>
-    </div> 
+        <!-- <h1>CERTIFICATES<h1> -->
+        
+        <table class="project">
+            <tr>
+                <td rowspan="2">
+                    <div>
+                        <img src="./Images/Projects/equi_pay_logo.png" height="100%" width="100%" >
+                    </div>
+                </td>
+                <td Align="left"><p>
+                    <h3>1. EquiPay - Split your bills equally</h3>
+                    <ul>
+                        <li>Developed an Android application for effortless expense splitting among members for different occasions.</li>
+                        <li>Carried out end-to-end development efforts, utilizing technologies such as Adobe Photoshop for design, XML with Android Studio libraries for UI component description, Java for Frontend (event-handling) and Backend (logic), and SQLite for DB management.</li>
+                        <li>Laid out the foundational codebase in a clean, readable and hierarchical structure for enhanced maintainability and scalability.</li>
+                    </ul>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td Align="left">
+                    <a href="https://play.google.com/store/apps/details?id=com.equipay.equipay&pcampaignid=web_share"><img src="./Images/ButtonImages/googlePlayStore.png" height="15%" width="15%"></img></a>
+                </td>
+            </tr>
+            
+        </table>
+    <br>
+    <HR>
+</div> 
 </a>
+<div class="gap"></div></span>
 
 <a name="contactMe">
-    <div class="thought">
-        <h1 Align="Left">CONTACT ME</h1>
-            <!-- <span class="invertedQuote">“</span>
-            <span class="quote">Over the years, I've given myself a thousand reasons to keep running, but it always comes back to where it started. It comes down to self-satisfaction and a sense of achievement.</span>
-            <span class="invertedQuote">"</span>
-            <p class="author">– Steve Prefontaine</p> -->
-            <br>
-            
-            <table Align="center">
-                <!-- <tr class="certs"> -->
-                    <tr class="contactMe">
-                        <td style="padding-left: 40px; padding-right: 40px;">
-                            <img src="./Images/ContactUs/email.png" height="40px" width="40px"><h1>E-mail</h1>
-                        </td>
-                        <td style="padding-left: 40px; padding-right: 40px;">
-                            <img src="./Images/ContactUs/phone.png" height="40px" width="40px"><h1>Phone Number</h1>
-                        </td>
-                        <td style="padding-left: 40px; padding-right: 40px;">
-                            <img src="./Images/ContactUs/linkedin.png" height="40px" width="40px"><h1>LinkedIn</h1>
-                        </td>
-                        <td style="padding-left: 40px; padding-right: 40px;">
-                            <img src="./Images/ContactUs/skype.png" height="40px" width="40px"><h1>Skype</h1>
-                        </td>
-                    </tr>
-                    <tr class="contactMe">
-                        <td style="background-color: antiquewhite;
-                        padding-left: 40px; 
-                        padding-right: 40px;">
-                            <span><h3><a href="mailto:rg16feb@gmail.com" style="text-decoration: none; color: black;">rg16feb@gmail.com</a></h3></span> 
-                        </td>
-                        
-                        <td style="background-color: antiquewhite;
-                        padding-left: 40px; 
-                        padding-right: 40px;">
-                            <span><h3><a href="tel:+917530003233" style="text-decoration: none; color: black;">+91-7530003233</a></h3></span> 
-                        </td> 
-                        <td style="background-color: antiquewhite;
-                        padding-left: 40px; 
-                        padding-right: 40px;">
-                            <span><h3><a href="https://www.linkedin.com/in/rohan-g-aaa5b9a4/" style="text-decoration: none; color: black;">Visit LinkedIn</a></h3></span> 
-                        </td> 
-                        <td style="background-color: antiquewhite;
-                        padding-left: 40px; 
-                        padding-right: 40px;">
-                            <span><h3>rohangupta6662</h3></span> 
-                        </td> 
-                        
-                        
-                    </tr>
-            </table>
+<div class="thought">
+    <h1 Align="Left">CONTACT ME</h1>
+        <!-- <span class="invertedQuote">“</span>
+        <span class="quote">Over the years, I've given myself a thousand reasons to keep running, but it always comes back to where it started. It comes down to self-satisfaction and a sense of achievement.</span>
+        <span class="invertedQuote">"</span>
+        <p class="author">– Steve Prefontaine</p> -->
+        <br>
+        
+        <table Align="center">
+            <!-- <tr class="certs"> -->
+                <tr class="contactMe">
+                    <td style="padding-left: 40px; padding-right: 40px;">
+                        <img src="./Images/ContactUs/email.png" height="40px" width="40px"><h1>E-mail</h1>
+                    </td>
+                    <td style="padding-left: 40px; padding-right: 40px;">
+                        <img src="./Images/ContactUs/phone.png" height="40px" width="40px"><h1>Phone Number</h1>
+                    </td>
+                    <td style="padding-left: 40px; padding-right: 40px;">
+                        <img src="./Images/ContactUs/linkedin.png" height="40px" width="40px"><h1>LinkedIn</h1>
+                    </td>
+                    <td style="padding-left: 40px; padding-right: 40px;">
+                        <img src="./Images/ContactUs/skype.png" height="40px" width="40px"><h1>Skype</h1>
+                    </td>
+                </tr>
+                <tr class="contactMe">
+                    <td style="background-color: antiquewhite;
+                    padding-left: 40px; 
+                    padding-right: 40px;">
+                        <span><h3><a href="mailto:rg16feb@gmail.com" style="text-decoration: none; color: black;">rg16feb@gmail.com</a></h3></span> 
+                    </td>
+                    
+                    <td style="background-color: antiquewhite;
+                    padding-left: 40px; 
+                    padding-right: 40px;">
+                        <span><h3><a href="tel:+917530003233" style="text-decoration: none; color: black;">+91-7530003233</a></h3></span> 
+                    </td> 
+                    <td style="background-color: antiquewhite;
+                    padding-left: 40px; 
+                    padding-right: 40px;">
+                        <span><h3><a href="https://www.linkedin.com/in/rohan6262/" style="text-decoration: none; color: black;">Visit LinkedIn</a></h3></span> 
+                    </td> 
+                    <td style="background-color: antiquewhite;
+                    padding-left: 40px; 
+                    padding-right: 40px;">
+                        <span><h3>rohangupta6662</h3></span> 
+                    </td> 
+                </tr>
+        </table>
         <br>
         <HR>
     </div> 
 </a>
+
+
+
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop + 700;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+</script>
+
 </body>
 </html>
 

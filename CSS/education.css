@@ -1,0 +1,16 @@
+.education {
+    height: 100%;
+    width: 100%;
+    font-size: 30px;
+}
+
+.education th{
+    background-color: black;
+    border-bottom: 1pt solid black;
+    color: beige;
+}
+.education td{
+    background-color: beige;
+    border-bottom: 1pt solid black;
+    color: black;
+}
